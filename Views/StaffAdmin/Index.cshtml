@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Staff Admin Home Page";
+}
+
+<div class="container row p-0 m-0">
+    <div>
+        <h2>Welcome to Staff Admin Home Page</h2>
+    </div>
+    <div class="col-12 border p-3">
+        <div class="col-4">
+            <a asp-action="CreateEditUserAccount" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                Add Staff / Staff Admin Record
+            </a>
+            &nbsp;
+            <a asp-action="ViewUserAccount" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                View User Accounts
+            </a>
+            &nbsp;
+            <a asp-action="CreateEditDonorRecord" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                Add New Donor Record
+            </a>
+            &nbsp;
+            <a asp-action="ViewDonorRecord" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                View Donor Record
+            </a>
+            &nbsp;
+            <a asp-action="CreateEditDonationRecord" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                Add New Donation Record
+            </a>
+            &nbsp;
+            <a asp-action="ViewDonationRecord" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                View Donation Record
+            </a>
+            &nbsp;
+            <a asp-action="ViewResetStatus" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                Reset Donation Status
+            </a>
+            &nbsp;
+            <a asp-action="ViewDonationRecordArchive" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                View Donation Archive
+            </a>
+            &nbsp;
+            <a asp-action="ViewDonorRecordArchive" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                View Donor Archive
+            </a>
+        </div>
+    </div>
+</div>

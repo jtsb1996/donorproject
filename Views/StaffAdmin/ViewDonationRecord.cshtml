@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "View Donation Record";
+}
+
+<div class="container row p-0 m-0">
+    <div>
+        View Donation Record
+    </div>
+    <div class="col-12 border p-3">
+        <table id="DT_load" class="table table-striped table-bordered" style=" width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Donation</th>
+                    <th>Amount of Donation</th>
+                    <th>Receipt Number</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="col-12 border p-3">
+        <div class="col-4">
+            <a asp-action="DonationConvertToCSV" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                Download Donation Records
+            </a>
+        </div>
+        <div class="col-4">
+            <a asp-action="DonationConvertToCSV" asp-controller="StaffAdmin" class="btn btn-info form-control text-white">
+                Import Donation Records
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/viewStaffAdminDonation.js"></script>
+}

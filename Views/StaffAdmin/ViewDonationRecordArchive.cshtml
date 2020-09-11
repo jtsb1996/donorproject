@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "View Donation Record";
+}
+
+<div class="container row p-0 m-0">
+    <div>
+        <h2>Donation Archive</h2>
+    </div>
+    <div class="col-12 border p-3">
+        <table id="DT_load" class="table table-striped table-bordered" style=" width:100%">
+            <thead>
+                <tr>
+                    <th>Archive Date</th>
+                    <th>Name</th>
+                    <th>Date of Donation</th>
+                    <th>Amount of Donation</th>
+                    <th>Receipt Number</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+        </table>
+        <button class="btn btn-info text-white" onclick="ArchiveDonationRecord('/staffadmin/ArchiveDonationRecords')">
+            Archive Donation Record
+        </button>
+    </div>
+
+@section Scripts{
+    <script src="~/js/viewDonationArchive.js"></script>
+}

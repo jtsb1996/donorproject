@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Donor Home Page";
+}
+
+<div class="container row p-0 m-0">
+    <div>
+        Welcome to Donor Home Page
+    </div>
+    <div class="col-12 border p-3">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+                <a asp-action="CreateEditDonationRecord" asp-controller="Donor" class="btn btn-info form-control text-white">
+                    Add New Donation Record
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-action="ViewDonationRecord" asp-controller="Donor" class="btn btn-info form-control text-white">
+                    View Donation Record
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
